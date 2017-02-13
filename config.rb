@@ -9,6 +9,8 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
+activate :directory_indexes
+
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
 
@@ -20,6 +22,8 @@ page '/*.txt', layout: false
 # Helpers
 ###
 
+Time.zone = "US/Eastern"
+
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
   # blog.prefix = "blog"
@@ -28,9 +32,9 @@ activate :blog do |blog|
   # Matcher for blog source files
   # blog.sources = "{year}-{month}-{day}-{title}.html"
   # blog.taglink = "tags/{tag}.html"
-  # blog.layout = "layout"
-  # blog.summary_separator = /(READMORE)/
-  # blog.summary_length = 250
+  blog.layout = "layout"
+  blog.summary_separator = /(READMORE)/
+  blog.summary_length = 250
   # blog.year_link = "{year}.html"
   # blog.month_link = "{year}/{month}.html"
   # blog.day_link = "{year}/{month}/{day}.html"
@@ -40,9 +44,9 @@ activate :blog do |blog|
   blog.calendar_template = "calendar.html"
 
   # Enable pagination
-  # blog.paginate = true
-  # blog.per_page = 10
-  # blog.page_link = "page/{num}"
+  blog.paginate = true
+  blog.per_page = 10
+  blog.page_link = "page/{num}"
 end
 
 page "/feed.xml", layout: false
@@ -57,6 +61,9 @@ page "/feed.xml", layout: false
 #     "Helping"
 #   end
 # end
+
+# Asset pipeline
+activate :sprockets
 
 # Build-specific configuration
 configure :build do
