@@ -130,6 +130,7 @@ DEPENDENCIES
   nokogiri
   rack-contrib (~> 1.4)
   redcarpet (~> 3.3, >= 3.3.3)
+  sass (~> 3.4, >= 3.4.22)
 
 BUNDLED WITH
    1.14.3

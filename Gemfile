@@ -8,6 +8,7 @@ gem 'middleman-sprockets', '~> 4.1', '>= 4.1.0'
 gem 'redcarpet', '~> 3.3', '>= 3.3.3'
 
 gem 'jquery-middleman'
+gem 'sass', '~> 3.4', '>= 3.4.22'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 
 # gem 'bourbon', '~> 4.2', '>= 4.2.6'
