@@ -1,29 +1,112 @@
----
-pageable: true
-per_page: 10
----
+<div class="container">
+  <div class="jumbotron">
+    <div class="col-md-12">
+      <div id="skills" class="center">
+        <div id="skills-wrapper-place"></div>
+        <div id="skills-wrapper"></div>
+        <div id="skills1">
+          <div id="circle1">
+          </div>
+          <div id="circle-title-left">Communication</div>
+          <div id="skills-content-left-top"></div>
+        </div>
 
-<div class="container outer-container">
-  <% if paginate && num_pages > 1 %>
-    <p>Page <%= page_number %> of <%= num_pages %></p>
+        <div id="skills2">
+          <div id="circle2">
+          </div>
+          <div id="circle-title-left">Sustainability</div>
+          <div id="skills-content-left-bottom"></div>
+        </div>
 
-    <% if prev_page %>
-      <p><%= link_to 'Previous page', prev_page %></p>
-    <% end %>
-  <% end %>
+        <div id="skills3">
+          <div id="circle3">
+          </div>
+          <div id="circle-title-bottom">Customer Experience</div>
+          <div id="skills-content-bottom"></div>
+        </div>
 
-  <% page_articles.each_with_index do |article, i| %>
-    <div class="mini-post">
-      <h2><%= link_to article.title, article %>
-        <span><%= article.date.strftime('%b %e') %></span></h2>
-      <%= article.summary(250) %>
+        <div id="skills4">
+          <div id="circle4"></div>
+          <div id="circle-title-right-bottom">Building</div>
+          <div id="skills-content-right-bottom"></div>
+        </div>
+
+        <div id="skills5">
+          <div id="circle5"></div>
+          <div id="circle-title-right-top">Design</div>
+          <div id="skills-content-right-top"></div>
+        </div>
+      </div>
     </div>
-  <% end %>
+  </div>
 
-  <% if paginate %>
-    <% if next_page %>
-      <p><%= link_to 'Next page', next_page %></p>
-    <% end %>
-  <% end %>
+
+
+  <div class="col-md-12">
+    <div class="recommendations">
+      <!--<h2 class="passion-header">Testimonials</h2>-->
+
+      <div class="rec-container">
+        <div class="recommender col-md-3">
+          <div class="rec-photo" id="rec-photo1"></div>
+          <h3>
+            <a href="http://www.linkedin.com/pub/jennifer-vervier/9/491/999/" target="_blank">Jennifer
+              Vervier</a></h3> New Belgium Brewing Co.
+        </div>
+        <div class="col-md-8">
+          <div class="rec-body" id="rec1">
+            <p><i>Bradley's unique blend of sustainability knoweldge, website
+              design, and graphical presentation of complex data were invaluable
+              in helping us revamp the sustainability section of our website. He
+              was the bridge between two 'worlds' required for the project to be
+              successful Additionally, Bradley is highly organized, thorough,
+              timely and just plain pleasant to work with.</i></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="rec-container">
+        <div class="recommender col-md-3">
+          <div class="rec-photo" id="rec-photo2"></div>
+          <h3>
+            <a href="https://www.linkedin.com/in/cindy-marshall-9712996/" target="_blank">Cindy
+              Marshall</a></h3> Denver Water
+        </div>
+        <div class="col-md-8">
+          <div class="rec-body" id="rec2">
+            <p><i>Bradley quickly became an asset to our team by tackling
+              additional responsibilities above and beyond his required duties. He
+              took the initiative to suggest and design a new license plate which
+              increased public recognition of our bicycle program. He was able to
+              effectively communicate even in confrontational situations, and we
+              consistently turned to Bradley for media requests to demonstrate the
+              Water Use Enforcement program. On each occasion he represented
+              Denver Water with excellence.</p>
+            <p>I highly recommend Bradley based on his creativity, energy, and
+              integrity.</i></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="rec-container">
+        <div class="recommender col-md-3">
+          <div class="rec-photo" id="rec-photo3"></div>
+          <h3>
+            <a href="http://www.linkedin.com/pub/reid-mcknight/11/b57/305" target="_blank">Reid
+              McKnight</a></h3> Geneva Glen Camp Inc.
+        </div>
+        <div class="col-md-8">
+          <div class="rec-body"  id="rec3">
+            <p><i>Bradley demonstrated exemplary character and work ethic in the
+              execution of his duties at Geneva Glen. In maintaining the camp
+              facility and grounds, Brad was a leader by his own example and was
+              well respected by both his peers as well as the people working for
+              him. Highest in my mind is Brad's integrity in word and deed - I
+              recommend him very highly.</i></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
